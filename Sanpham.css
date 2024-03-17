@@ -1,0 +1,63 @@
+/* Thiết lập các kiểu CSS chung */
+img {
+    height: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, section, footer {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    top: 80px; /* Đặt vị trí của nav dưới header */
+}
+
+section {
+    background-color: yellow;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    /* background-image: url(TaiNguyenAnh/logo.png); */
+    background-size: cover;
+    height: 100px;
+    position: fixed;
+}
+
+
+
+footer {
+    background-color: #20d226;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
