@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     justify-content: center; */
 }
+
 /* img {
     height: 50px;
 } */
@@ -16,7 +17,10 @@ body {
     padding: 0;
 }
 
-header, nav, section, footer {
+header,
+nav,
+section,
+footer {
     padding: 20px;
 }
 
@@ -68,13 +72,19 @@ header {
     align-items: center;
 }
 
+.menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex !important;
+}
+
 .grid-container {
-    width: auto ;
+    width: auto;
     display: grid;
     grid-gap: 70px;
     justify-content: center;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto ;
+    grid-template-rows: auto auto auto;
 }
 
 .thumbnail {
@@ -171,22 +181,39 @@ footer {
 /* Màn hình smartphone */
 @media screen and (max-width: 767px) {
     .thumbnail {
-        background-color: gray;
+        background-color: red;
+    }
+
+    .grid-container {
+        width: auto;
+        display: grid;
+        grid-gap: 70px;
+        justify-content: center;
+        grid-template-columns:  auto;
+        grid-template-rows:  auto;
+    }
+}
+
+/* Màn hình tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .thumbnail {
+        background-color: yellow;
+        flex-direction: column-reverse;
+    }
+
+    .grid-container {
+        width: auto;
+        display: grid;
+        grid-gap: 70px;
+        justify-content: center;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
     }
 }
 
 /* Màn hình dektop */
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 768px) {
     .thumbnail{
-        background-color: red;
+        background-color: black;
     }
-}
-
-
-
-/* Màn hình tablet */
-@media screen and (max-width: 992px) {
-    .thumbnail {
-        background-color: yellow;
-    }
-}
+} */
