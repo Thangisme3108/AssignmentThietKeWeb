@@ -148,14 +148,14 @@ section .container .thumbnail a {
 
 footer {
     background-color: #20d226;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 5%;
     text-align: center;
 }
 
-@media screen and(max-width: 768px) {
+/* @media screen and(max-width: 768px) {
     .container {
         width: calc(48% - 22px);
     }
@@ -164,5 +164,29 @@ footer {
 @media screen and(max-width: 480px) {
     .container {
         width: 100%;
+    }
+} */
+
+
+/* Màn hình smartphone */
+@media screen and (max-width: 767px) {
+    .thumbnail {
+        background-color: gray;
+    }
+}
+
+/* Màn hình dektop */
+@media screen and (min-width: 992px) {
+    .thumbnail{
+        background-color: red;
+    }
+}
+
+
+
+/* Màn hình tablet */
+@media screen and (max-width: 992px) {
+    .thumbnail {
+        background-color: yellow;
     }
 }
