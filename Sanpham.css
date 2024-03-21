@@ -1,7 +1,14 @@
-/* Thiết lập các kiểu CSS chung */
-img {
-    height: 50px;
+.container {
+    max-width: 100%;
+    /* width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
 }
+/* img {
+    height: 50px;
+} */
 
 body {
     font-family: Arial, sans-serif;
@@ -20,23 +27,24 @@ ul {
 }
 
 nav {
-    background-color: red;
-    position: absolute;
+    background-color: black;
+    /* position: absolute; */
     width: 100%;
-    top: 80px; /* Đặt vị trí của nav dưới header */
+    /* top: 80px; Đặt vị trí của nav dưới header */
 }
 
-section {
-    background-color: yellow;
+/* section {
     position: absolute;
     width: 100%;
-    top: 200px;
-}
+    top: 118px;
+    align-items: center;
+} */
 nav ul {
     display: flex;
 }
 
 nav ul li {
+    margin-left: 30px;
     margin-right: 20px;
 }
 
@@ -46,18 +54,115 @@ nav ul li a {
 }
 
 header {
-    /* background-image: url(TaiNguyenAnh/logo.png); */
-    background-size: cover;
-    height: 100px;
-    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: red;
 }
 
+.header-container {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: red;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.grid-container {
+    width: auto ;
+    display: grid;
+    grid-gap: 70px;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto ;
+}
+
+.thumbnail {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid pink;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+section .container .thumbnail a {
+    text-decoration: none;
+}
+
+.product_label {
+    display: flex;
+}
+
+.GiaSale {
+    margin-right: 80px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #cb1c22;
+    background-color: #cb1c22;
+    width: 110px;
+}
+
+.GiaGoc {
+    margin-top: 3px;
+    font-size: 14px;
+    color: gray;
+}
+
+.MuaNgay {
+    width: 80px;
+    height: 30px;
+    background-color: #cb1c22;
+    color: white;
+    border: 1px solid #cb1c22;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.MuaNgay a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.MuaNgay:hover {
+    background: blue;
+    color: white;
+}
+
+.thumbnail a img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.3s;
+}
+
+.thumbnail a img:hover {
+    transform: scale(1.1);
+}
 
 footer {
     background-color: #20d226;
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 5%;
     text-align: center;
+}
+
+@media screen and(max-width: 768px) {
+    .container {
+        width: calc(48% - 22px);
+    }
+}
+
+@media screen and(max-width: 480px) {
+    .container {
+        width: 100%;
+    }
 }
