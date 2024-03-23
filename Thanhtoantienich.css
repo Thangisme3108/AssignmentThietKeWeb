@@ -2,7 +2,7 @@
 .container {
     max-width: 100%;
 }
-img {
+.logo {
     height: 50px;
 }
 
@@ -75,14 +75,12 @@ footer {
 }
 
 
-@media screen and (max-width: 768px) {
-    .thumbnail {
-        width: calc(48%-22px);
-    }
+/* Màn hình smartphone */
+@media screen and (max-width: 767px) {
+    
 }
 
-@media screen and (max-width: 480px) {
-    .thumbnail {
-        width: 100%;
-    }
+/* Màn hình tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
 }

@@ -2,7 +2,7 @@
 .container {
     max-width: 100%;
 }
-img {
+.logo {
     height: 50px;
 }
 
@@ -64,6 +64,45 @@ header {
     align-items: center;
 }
 
+.noi_dung {
+    width: 100%; 
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    /* border: 2px solid rgb(192, 183, 183);
+    border-radius: 10px; */
+    align-items: center;        
+    margin-top: 50px;
+}
+
+.noi_dung2 {
+    width: 80%; 
+    height: auto;
+    display: flex; 
+    margin-top: 50px;
+    margin-left: 160px;
+}
+
+.noi_dung img {
+    width: 70%;
+}
+
+.gioi_thieu_chung {
+    width: 80%;
+}
+
+.img_gioi_thieu_chung {
+    width: 20%;
+}
+
+.img_gioi_thieu_chung img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.noi_dung .gioi_thieu_chung h1 {
+    color: orange;
+}
 
 footer {
     background-color: #20d226;
@@ -74,15 +113,12 @@ footer {
     text-align: center;
 }
 
-
-@media screen and (max-width: 768px) {
-    .thumbnail {
-        width: calc(48%-22px);
-    }
+/* Màn hình smartphone */
+@media screen and (max-width: 767px) {
+    
 }
 
-@media screen and (max-width: 480px) {
-    .thumbnail {
-        width: 100%;
-    }
+/* Màn hình tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
 }

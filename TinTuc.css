@@ -2,7 +2,7 @@
 .container {
     max-width: 100%;
 }
-img {
+.logo {
     height: 50px;
 }
 
@@ -46,7 +46,10 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+}
+
+nav ul li a:hover {
+    color: gray;
 }
 
 header {
@@ -64,6 +67,83 @@ header {
     align-items: center;
 }
 
+.news {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    display: flex;
+    border: 2px solid rgb(192, 183, 183);
+    border-radius: 10px;
+}
+
+.news-left {
+    margin: 10px;   
+    width: 60%;
+    height: 400px;
+    padding: 10px;
+}
+
+.news-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.news-left a:hover {
+    color: blueviolet;
+}
+
+.img_news_left {
+    display: flex;
+    flex-direction: row;
+}
+
+.news-right {
+    margin: 10px;
+    width: 40%;
+    flex-direction: column;
+    height: 400px;
+}
+
+.product_news_right {
+    display: flex;
+    height: 20%;
+    margin: 10px;
+    border: 5px solid #edeaea;
+    border-radius: 5px;
+}
+
+.product_news_right a {
+    width: 65%;
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+}
+
+.product_news_right a:hover {
+    color: blueviolet;
+}
+
+.product_news_bottom {
+    width: 80%;
+    height: 20%;
+    margin: 10px;
+    display: flex;
+}
+
+.info {
+    margin-left: 10px;
+    width: 65%;
+}
+
+.product_news_bottom .info a {
+    
+    color: black;
+    text-decoration: none;
+}
+
+.product_news_bottom .info a:hover {
+    color: blueviolet;
+}
 
 footer {
     background-color: #20d226;
@@ -75,14 +155,14 @@ footer {
 }
 
 
-@media screen and (max-width: 768px) {
-    .thumbnail {
-        width: calc(48%-22px);
+/* Màn hình smartphone */
+@media screen and (max-width: 767px) {
+    .news-right {
+        flex-direction: row;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .thumbnail {
-        width: 100%;
-    }
+/* Màn hình tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
 }
