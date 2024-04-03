@@ -46,7 +46,20 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
     color: black;
+    background-color: white;
+}
+
+.header-container .btn_header a {
+    color: white;
+    border: none;
+    background-color: red;
+    text-decoration: none;
+    margin-right: 20px;
 }
 
 header {
@@ -115,10 +128,23 @@ footer {
 
 /* Màn hình smartphone */
 @media screen and (max-width: 767px) {
+    .noi_dung2 {
+        width: 80%; 
+        height: auto;
+        display: contents; 
+        margin-top: 50px;
+        margin-left: 160px;
+    }
     
 }
 
 /* Màn hình tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    
+    .noi_dung2 {
+        width: 80%; 
+        height: auto;
+        display: contents; 
+        margin-top: 50px;
+        margin-left: 160px;
+    }
 }

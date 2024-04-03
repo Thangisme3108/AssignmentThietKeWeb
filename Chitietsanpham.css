@@ -46,7 +46,20 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
     color: black;
+    background-color: white;
+}
+
+.header-container .btn_header a {
+    color: white;
+    border: none;
+    background-color: red;
+    text-decoration: none;
+    margin-right: 20px;
 }
 
 header {
