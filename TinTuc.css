@@ -30,7 +30,7 @@ ul {
 nav {
     background-color: black;
     /* position: absolute; */
-    width: 100%;
+    /* width: 100%; */
     /* top: 80px; Đặt vị trí của nav dưới header */
 }
 
@@ -87,7 +87,7 @@ header {
 }
 
 .news {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     flex-direction: row;
     display: flex;
@@ -178,7 +178,6 @@ footer {
     background-color: #20d226;
     position: relative;
     bottom: 0;
-    width: 100%;
     height: 5%;
     text-align: center;
 }

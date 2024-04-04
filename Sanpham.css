@@ -173,7 +173,7 @@ footer {
     background-color: #20d226;
     position: relative;
     bottom: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 5%;
     text-align: center;
 }
