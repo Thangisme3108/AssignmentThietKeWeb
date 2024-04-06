@@ -61,6 +61,9 @@ nav ul li a:hover {
     text-decoration: none;
     margin-right: 20px;
 }
+.header-container .btn_header a:hover {
+    color: gray;
+}
 
 header {
     width: 100%;

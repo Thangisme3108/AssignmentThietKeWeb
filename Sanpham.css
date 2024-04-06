@@ -69,6 +69,9 @@ nav ul li a:hover {
     text-decoration: none;
     margin-right: 20px;
 }
+.header-container .btn_header a:hover {
+    color: gray;
+}
 
 header {
     width: 100%;
@@ -173,22 +176,10 @@ footer {
     background-color: #20d226;
     position: relative;
     bottom: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 5%;
     text-align: center;
 }
-
-/* @media screen and(max-width: 768px) {
-    .container {
-        width: calc(48% - 22px);
-    }
-}
-
-@media screen and(max-width: 480px) {
-    .container {
-        width: 100%;
-    }
-} */
 
 
 /* Màn hình smartphone */
