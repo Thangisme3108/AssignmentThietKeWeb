@@ -117,12 +117,12 @@ header {
 }
 
 .img_news_left1 {
-    width: 45%;
+    width: 49%;
     margin-right: 5px;
 }
 
 .img_news_left2 {
-    width: 49%;
+    width: 50%;
     margin-left: 5px;
 }
 
@@ -213,7 +213,7 @@ footer {
 /* Màn hình tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .news-left {
-        width: 100%;
+        width: 95%;
     }
 
     .news-right {
